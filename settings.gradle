@@ -1,17 +1,3 @@
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        maven {
-            name = 'Fabric'
-            url = 'https://maven.fabricmc.net/'
-        }
-        maven {
-            name = 'Forge'
-            url = 'https://maven.minecraftforge.net/'
-        }
-    }
-}
-
 plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version("0.8.0")
 }
@@ -21,27 +7,5 @@ include (
         'api',
         'common',
         'common:loader-utils',
-        'bukkit',
-        'bukkit:loader',
-        'bukkit-legacy',
-        'bukkit-legacy:loader',
-        'bungee',
-        'bungee:loader',
-        'fabric',
-        'neoforge',
-        'neoforge:loader',
-        'neoforge:neoforge-api',
-        'forge',
-        'forge:loader',
-        'forge:forge-api',
-        'nukkit',
-        'nukkit:loader',
-        'sponge',
-        'sponge:loader',
-        'sponge:sponge-service',
-        'sponge:sponge-service-api8',
         'velocity',
-        'standalone',
-        'standalone:loader',
-        'standalone:app'
 )
