@@ -21,6 +21,7 @@ processResources {
 
 shadowJar {
     archiveFileName = "LuckPerms-Bukkit-${project.ext.fullVersion}.jar"
+    destinationDirectory = rootProject.projectDir
 
     from {
         project(':bukkit').tasks.shadowJar.archiveFile
